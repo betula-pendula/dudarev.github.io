@@ -1,0 +1,73 @@
+.justify-content-between {
+    justify-content: left !important;
+}
+
+.about-banner1 {
+    background: url(../img/m-guide.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.e-max {
+    background: url(../img/e-max.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.gnalogia {
+    background: url(../img/gnalogia.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.implantation {
+    background: url(../img/implantation.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.vineers {
+    background: url(../img/vineers.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.skylovie-implant {
+    background: url(../img/skylovie-implant.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.sedanaciya {
+    background: url(../img/sedanaciya.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.laboratoria {
+    background: url(../img/laboratoria.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.ckaner {
+    background: url(../img/ckaner.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.cad-cam {
+    background: url(../img/cad-cam.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.svarka {
+    background: url(../img/svarka.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.scaner {
+    background: url(../img/scaner.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.tomograf {
+    background: url(../img/tomograf.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.contact-banner {
+    background: url(../img/contact-banner.jpg) right no-repeat;
+    background-size:cover;
+}
