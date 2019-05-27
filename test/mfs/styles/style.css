@@ -30,3 +30,14 @@
     background: #162131;
     width: 175px;
 }
+
+.info-three {
+    top: -50px;
+}
+
+.info-three-title {
+    height: 50px;
+    background-color: #162131;
+    color: white;
+    padding-top: 8px;
+}
