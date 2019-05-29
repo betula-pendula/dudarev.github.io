@@ -37,7 +37,31 @@
 
 .info-three-title {
     height: 50px;
-    background-color: #162131;
+    background-color: #afd13a;
     color: white;
     padding-top: 8px;
+}
+
+.button a span {
+    color: #fff;
+}
+
+.photo-product {
+    margin-bottom: 5em;
+}
+
+.warning {
+    background-color: #f8fafc;
+}
+
+.warning h5 {
+    color: #162131;
+    padding: 20px 20px;
+    margin-bottom: 0px;
+    line-height: 2.14;
+    margin-bottom: 2em;
+}
+
+.tab_list {
+    padding-top: 0px;
 }

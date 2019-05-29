@@ -852,8 +852,8 @@ section
 {
 	width: 100%;
 	background: #FFFFFF;
-	padding-top: 99px;
-	padding-bottom: 102px;
+	padding-top: 50px;
+	padding-bottom: 30px;
 }
 .icon_boxes_row
 {
@@ -947,8 +947,8 @@ section
 {
 	width: 100%;
 	background: #FFFFFF;
-	padding-top: 100px;
-	padding-bottom: 97px;
+	padding-top: 30px;
+	padding-bottom: 80px;
 }
 .tab
 {
@@ -1026,7 +1026,7 @@ section
 }
 .tab_list
 {
-	padding-top: 31px;
+	padding-top: 0px;
 }
 .tab_list ul li:not(:last-child)
 {
