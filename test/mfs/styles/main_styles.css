@@ -828,7 +828,7 @@ section
 .home_title
 {
 	font-size: 50px;
-	font-weight: 600;
+	font-weight: 700;
 	color: #FFFFFF;
 	max-width: 570px;
 	line-height: 1.2;
@@ -1040,7 +1040,7 @@ section
 }
 .cta_button
 {
-	width: 141px;
+	width: 250px;
 	margin-top: 7px;
 }
 
