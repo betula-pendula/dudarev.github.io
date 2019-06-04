@@ -257,6 +257,11 @@ section
 	background: #afd13a;
 	overflow: hidden;
 }
+.bbb
+{
+	position: absolute;
+	bottom: 3em;
+}
 .button a
 {
 	display: block;
@@ -856,7 +861,7 @@ section
 	width: 100%;
 	background: #FFFFFF;
 	padding-top: 0px;
-	padding-bottom: 100px;
+	padding-bottom: 0px;
 }
 .info_box
 {
@@ -877,6 +882,7 @@ section
 	padding-top: 46px;
 	padding-right: 20px;
 	padding-bottom: 31px;
+	height: 450px;
 }
 .info_title
 {
