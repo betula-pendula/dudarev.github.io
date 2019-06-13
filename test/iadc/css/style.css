@@ -76,3 +76,48 @@
     background: url(../img/doctora.jpg) right no-repeat;
     background-size:cover;
 }
+
+.gigiena {
+    background: url(../img/gigiena/head.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.skul {
+    background: url(../img/skul/head.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.paradon {
+    background: url(../img/paradon/head.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.impl {
+    background: url(../img/impl/head.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.endo {
+    background: url(../img/endo/head.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.micro {
+    background: url(../img/micro/head.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.keram {
+    background: url(../img/keram/head.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.vinir {
+    background: url(../img/vinir/head.jpg) right no-repeat;
+    background-size:cover;
+}
+
+.gnatolog {
+    background: url(../img/gnatolog/head.jpg) right no-repeat;
+    background-size:cover;
+}
