@@ -670,12 +670,11 @@
 
 					<!-- Latest News -->
 					<div class="col-lg-5">
+						<!--
 						<div class="news">
 							<div class="news_title">Отзывы</div>
 							<div class="news_subtitle">Отзывы наших довольных клиентов</div>
 							<div class="news_container">
-
-								<!-- Latest News Post -->
 								<div class="latest d-flex flex-row align-items-start justify-content-start">
 									<div>
 										<div class="latest_image"><img src="images/latest_1.jpg" alt=""></div>
@@ -690,8 +689,6 @@
 										</div>
 									</div>
 								</div>
-
-								<!-- Latest News Post -->
 								<div class="latest d-flex flex-row align-items-start justify-content-start">
 									<div>
 										<div class="latest_image"><img src="images/latest_2.jpg" alt=""></div>
@@ -706,8 +703,6 @@
 										</div>
 									</div>
 								</div>
-
-								<!-- Latest News Post -->
 								<div class="latest d-flex flex-row align-items-start justify-content-start">
 									<div>
 										<div class="latest_image"><img src="images/latest_3.jpg" alt=""></div>
@@ -724,6 +719,7 @@
 
 							</div>
 						</div>
+					-->
 					</div>
 
 				</div>
@@ -770,17 +766,19 @@
 							<div class="footer_contact">
 								<div class="footer_contact_title">Напишите нам</div>
 								<div class="footer_contact_form_container">
-									<form action="#" class="footer_contact_form" id="footer_contact_form">
+									<form action="mail.php" method="post" class="footer_contact_form" id="footer_contact_form">
 										<div
 											class="d-flex flex-xl-row flex-column align-items-center justify-content-between">
 											<input type="text" class="footer_contact_input" placeholder="Имя"
-												required="required">
+												required="required" name="name">
 											<input type="email" class="footer_contact_input" placeholder="E-mail"
-												required="required">
+												required="required" name="email">
 										</div>
 										<textarea class="footer_contact_input footer_contact_textarea"
-											placeholder="Сообщение" required="required"></textarea>
+											placeholder="Сообщение" required="required" name="message"></textarea>
 										<button class="footer_contact_button">Отправить</button>
+
+										<input type="submit" value="Отправить сообщение">
 									</form>
 								</div>
 							</div>
