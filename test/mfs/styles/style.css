@@ -12,20 +12,19 @@
     color: #212529;
     text-align: left;
     list-style: none;
-    background-color:#afd13a;
+    background-color: #afd13a;
     background-clip: padding-box;
-    border: 0px solid rgba(0,0,0,.15);
+    border: 0px solid rgba(0, 0, 0, .15);
     border-radius: .0rem;
-    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
 }
 
 .dropdown-menu .dropdown-item:hover {
-    color:#afd13a;
+    color: #afd13a;
 }
 
-.button_2
-{
+.button_2 {
     padding-left: 2em;
     padding-right: 2em;
     background: #162131;
@@ -68,6 +67,7 @@
 }
 
 .img-pic {
+    width: 100%;
     margin-bottom: 2em;
 }
 

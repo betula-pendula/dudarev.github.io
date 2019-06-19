@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
 	<title>PR-40</title>
@@ -67,7 +67,7 @@
 									<div
 										class="header_top_content d-flex flex-row align-items-center justify-content-start">
 										<div class="logo">
-											<a href="index.html"><img src="images/logo.png" alt="" width="150px"></a>
+											<a href="index.html"><img src="images/logo.png" alt="" width="150"></a>
 										</div>
 										<div
 											class="header_top_extra d-flex flex-row align-items-center justify-content-start ml-auto">
@@ -391,17 +391,19 @@
 							<div class="footer_contact">
 								<div class="footer_contact_title">Напишите нам</div>
 								<div class="footer_contact_form_container">
-									<form action="#" class="footer_contact_form" id="footer_contact_form">
+									<form action="./mail.php" method="post" class="footer_contact_form"
+										id="footer_contact_form">
 										<div
 											class="d-flex flex-xl-row flex-column align-items-center justify-content-between">
 											<input type="text" class="footer_contact_input" placeholder="Имя"
-												required="required">
+												required="required" name="name">
 											<input type="email" class="footer_contact_input" placeholder="E-mail"
-												required="required">
+												required="required" name="email">
 										</div>
 										<textarea class="footer_contact_input footer_contact_textarea"
-											placeholder="Сообщение" required="required"></textarea>
-										<button class="footer_contact_button">Отправить</button>
+											placeholder="Сообщение" required="required" name="message"></textarea>
+										<!--<button class="footer_contact_button">Отправить</button>-->
+										<input class="footer_contact_button" type="submit" value="Отправить сообщение">
 									</form>
 								</div>
 							</div>
