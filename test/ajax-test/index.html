@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/wickedcss.min.css">
+</head>
+
+<body>
+
+	<div class="menu">
+		<label for="pseudoBtn" class="btn">
+			<img class="x1 slideDown" src="img/Hamburger_icon.png" alt="" width="25px">
+		</label>
+		<input type="checkbox" id="pseudoBtn">
+		<div class="text">
+			<img class="ajax-img-menu" src="img/ajax.png" alt="">
+			<img class="ajax-stars-menu" src="img/Ajax Shape stars.svg" alt="">
+			<img class="x-menu" src="img/XMLID_90_.svg" alt="">
+			<div class="menu-in"></div>
+			<a href="#">
+				<p class="sing-up-menu">Sing Up</p>
+			</a>
+			<a href="#">
+				<p class="sing-in-menu">Sing In</p>
+			</a>
+			<a href="#">
+				<p class="ajax-e-sport">AJEX E-SPORT APP</p>
+			</a>
+			<div class="menu-list">
+				<a href="#">
+					<p class="home">HOME</p>
+				</a>
+				<a href="#">
+					<p class="found">FOUNDERS</p>
+				</a>
+				<a href="#">
+					<p class="badge">BADGES COUPONS AND COINS</p>
+				</a>
+				<a href="#">
+					<p class="regist">REGISTER</p>
+				</a>
+				<a href="#">
+					<p class="play">PLAY</p>
+				</a>
+				<a href="#">
+					<p class="cont">CONTACT</p>
+				</a>
+			</div>
+			<hr class="hr-menu">
+		</div>
+		<div class="menu-open"></div>
+	</div>
+
+	<div class="main">
+		<img class="logo" src="img/Ajax logo.svg" alt="">
+		<a href="#">
+			<p class="share">SHARE</p>
+		</a>
+		<a href="#">
+			<p class="sing-up">Sing Up</p>
+		</a>
+		<a href="#">
+			<p class="sing-in">Sing In</p>
+		</a>
+	</div>
+
+	<div class="xxx">
+		<img class="x1 slideDown" src="img/XMLID_90_.svg" alt="">
+		<img class="x2 slideDown" src="img/XMLID_90_.svg" alt="">
+		<img class="x3 slideDown" src="img/XMLID_90_.svg" alt="">
+
+		<img class="x5 slideDown" src="img/XMLID_90_.svg" alt="">
+		<img class="x6 slideDown" src="img/XMLID_90_.svg" alt="">
+
+		<img class="x7 slideDown" src="img/XMLID_90_.svg" alt="">
+		<img class="x9 slideDown" src="img/XMLID_90_.svg" alt="">
+	</div>
+
+	<div class="xxx-center">
+		<img class="x1 spinner" src="img/XMLID_90_.svg" alt="">
+		<img class="x2 spinner" src="img/XMLID_90_.svg" alt="">
+		<img class="x3 spinner" src="img/XMLID_90_.svg" alt="">
+	</div>
+
+	<div class="head">
+		<h1 class="slideRight">Ajax E-sport app get ready for<br /> a rumble</h1>
+		<p class="fadeIn">Do you have enough of what it takes to<br />become a new ajax e-sport legend?</p>
+	</div>
+
+	<div class="head-img">
+		<img class="ajax-img" src="img/ajax-main.png" alt="">
+		<img class="ajax-stars barrelRoll" src="img/Ajax Shape stars.svg" alt="">
+		<img class="ajax-line slideUp" src="img/Red line.svg" alt="">
+		<img class="ajax-group wow slideDown" src="img/Group 4.svg" alt="">
+	</div>
+
+	<img class="blurrer" src="img/Ajax blurred cross.svg" alt="">
+	<img class="blurrer-phone" src="img/Ajax blurred cross.svg" alt="">
+
+	<a class="scroll floater" href="#head1">
+		<img src="img/Scroll arrow.svg" alt="">
+	</a>
+
+	<div id="head1"></div>
+
+	<img class="phone wow slideDown" src="img/Phone mock.svg" alt="">
+
+	<div class="head-phone">
+		<h1>Become<br />a founder <br />of our future</h1>
+		<p>Do you have enough of what it takes to<br />become a new ajax e-sport legend?</p>
+	</div>
+
+	<img class="app-store pulse" src="img/apple-store-badge-png-6.png" alt="">
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script>
+		new WOW().init();
+
+		$('.btn').click(function () {
+			$(".block_with_text").fadeToggle(100);
+		});
+
+		const anchors = document.querySelectorAll('a[href*="#"]')
+
+		for (let anchor of anchors) {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault()
+
+				const blockID = anchor.getAttribute('href').substr(1)
+
+				document.getElementById(blockID).scrollIntoView({
+					behavior: 'smooth',
+					block: 'start'
+				})
+			})
+		}
+	</script>
+
+</body>
+
+</html>
