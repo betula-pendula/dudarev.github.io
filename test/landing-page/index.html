@@ -4,39 +4,38 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>BANKVEIEN 10</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" />
 	<link
 		href="https://fonts.googleapis.com/css?family=Faustina:400,500,600,700|Lato:300,400,700&display=swap&subset=latin-ext"
 		rel="stylesheet">
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
-	<div class="uk-section uk-text-left logo">
-		<div class="uk-container">
-			<img src="img/main-logo.svg" width="150" uk-svg>
+
+	<div class="section logo">
+		<div class="container">
+			<img src="img/main-logo.svg" width="150">
 		</div>
 	</div>
-	<div class="uk-section uk-text-left">
-		<div class="uk-container">
-			<h1 class="uk-heading-medium">Du har råd til å eie bolig!
+
+	<div class="section">
+		<div class="container">
+			<h1 class="heading-medium">Du har råd til å eie bolig!
 			</h1>
-			<p class="uk-text-uppercase">Å BETJENE PÅ DITT EGET BOLIGLÅN BEHØVER IKKE KOSTE MER I MÅNEDEN ENN Å LEIE. I
+			<p class="text-uppercase">Å BETJENE PÅ DITT EGET BOLIGLÅN BEHØVER IKKE KOSTE MER I MÅNEDEN ENN Å LEIE. I
 				TILLEGG FÅR DU EKSTRA
 				FORDELER DU KANSKJE IKKE VISSTE OM! Vil du vite mer? Vi er klare til å møtes og fortelle deg detaljene.
 			</p>
-			<hr class="uk-divider-icon">
-			<button class="uk-button uk-button-danger uk-width-1-1 uk-margin-small-bottom">Gjør en avtale</button>
+			<hr class="divider-icon">
+			<button class="button button-danger width-1-1 margin-small-bottom">Gjør en avtale</button>
 		</div>
 	</div>
-	<div class="uk-overflow-hidden" style="margin-top: 30px;">
-		<img src="img/header.jpg" alt="Example image" uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+	<div class="img-container">
+		<div class="image image-header"></div>
 	</div>
-	<div class="uk-section uk-text-left" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300">
-		<div class="uk-container">
+	<div class="section wow fadeIn">
+		<div class="container">
 			<h2>
 				BANKVEIEN 10
 			</h2>
@@ -52,138 +51,103 @@
 			</p>
 		</div>
 	</div>
-	<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
-		<ul class="uk-slider-items uk-grid uk-grid-match" uk-height-viewport="offset-top: true; offset-bottom: 30">
-			<li class="uk-width-3-4">
-				<div class="uk-cover-container">
-					<img src="img/room/1.jpg" alt="" uk-cover>
-				</div>
-			</li>
-			<li class="uk-width-3-4">
-				<div class="uk-cover-container">
-					<img src="img/room/2.jpg" alt="" uk-cover>
-				</div>
-			</li>
-			<li class="uk-width-3-4">
-				<div class="uk-cover-container">
-					<img src="img/room/3.jpg" alt="" uk-cover>
-				</div>
-			</li>
-			<li class="uk-width-3-4">
-				<div class="uk-cover-container">
-					<img src="img/room/4.jpg" alt="" uk-cover>
-				</div>
-			</li>
-			<li class="uk-width-3-4">
-				<div class="uk-cover-container">
-					<img src="img/room/5.jpg" alt="" uk-cover>
-				</div>
-			</li>
-		</ul>
-		<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
-			uk-slider-item="previous"></a>
-		<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
-			uk-slider-item="next"></a>
+	<div id="slider">
+		<figure>
+			<img src="img/room/1.jpg" alt>
+			<img src="img/room/2.jpg" alt>
+			<img src="img/room/3.jpg" alt>
+			<img src="img/room/4.jpg" alt>
+			<img src="img/room/1.jpg" alt>
+		</figure>
 	</div>
-	<div class="uk-section">
-		<div class="uk-container">
-			<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid
-				uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 400;">
-				<div>
-					<div class="uk-card uk-card-default uk-card-body">
-						<h3 class="uk-card-title">Compact living</h3>
-						<p>Trenden er et resultat av at stadig flere ønsker å bo i og rundt storbyer. Samtidig øker
-							miljøfokuset, og verdier er i endring. De siste årene har gode opplevelser blitt viktigere
-							enn å kunne vise frem størst mulig bolig, fylt med ting man sjeldent bruker.</p>
-					</div>
+	<div class="section">
+		<div class="container">
+			<div class="wow slideUp">
+				<div class="card card-default card-body">
+					<h3 class="card-title">Compact living</h3>
+					<p>Trenden er et resultat av at stadig flere ønsker å bo i og rundt storbyer. Samtidig øker
+						miljøfokuset, og verdier er i endring. De siste årene har gode opplevelser blitt viktigere
+						enn å kunne vise frem størst mulig bolig, fylt med ting man sjeldent bruker.</p>
 				</div>
-				<div>
-					<div class="uk-card uk-card-default uk-card-body">
-						<h3 class="uk-card-title">B10 rommer 58 studioleligheter på 22 - 34 m²</h3>
-						<p>De fleste leilighetene leveres møblert, med flott kjøkken med integrerte hvitevarer, hylle-
-							og skapløsning med et nedfellbart spisebord, fire stoler og skapseng. Skapsengen er sentral
-							i studiokonseptet. På dagtid fungerer den som sofa og bokhylle, mens den om kvelden enkelt
-							forvandles til en dobbeltseng. </p>
-					</div>
+			</div>
+			<div class="wow slideUp">
+				<div class="card card-default card-body">
+					<h3 class="card-title">B10 rommer 58 studioleligheter på 22 - 34 m²</h3>
+					<p>De fleste leilighetene leveres møblert, med flott kjøkken med integrerte hvitevarer, hylle-
+						og skapløsning med et nedfellbart spisebord, fire stoler og skapseng. Skapsengen er sentral
+						i studiokonseptet. På dagtid fungerer den som sofa og bokhylle, mens den om kvelden enkelt
+						forvandles til en dobbeltseng. </p>
 				</div>
-				<div>
-					<div class="uk-card uk-card-default uk-card-body">
-						<h3 class="uk-card-title">Leilighetene i de øverste etasjene har flott utsikt</h3>
-						<p>Alle leiligheten som vender mot vest har stor skyvedør ut mot balkong. Det er
-							interiørarkitektene Paulsen & Nilsen som står bak interiørkonseptet i B10 Studio.
-							Leilighetene har i tillegg til smarte innredningløsninger tidsriktig og moderne standard med
-							1-stavs parkett på gulv, kjøkken med integrerte hvitevarer og bad med store "Terrazzo"
-							fliser på gulv og en kombinasjon av "Terrazzo" og Vitra white glossy på vegg.</p>
-					</div>
+			</div>
+			<div class="wow slideUp">
+				<div class="card card-default card-body">
+					<h3 class="card-title">Leilighetene i de øverste etasjene har flott utsikt</h3>
+					<p>Alle leiligheten som vender mot vest har stor skyvedør ut mot balkong. Det er
+						interiørarkitektene Paulsen & Nilsen som står bak interiørkonseptet i B10 Studio.
+						Leilighetene har i tillegg til smarte innredningløsninger tidsriktig og moderne standard med
+						1-stavs parkett på gulv, kjøkken med integrerte hvitevarer og bad med store "Terrazzo"
+						fliser på gulv og en kombinasjon av "Terrazzo" og Vitra white glossy på vegg.</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="uk-height-medium uk-background-cover uk-light uk-flex" uk-parallax="bgy: -300"
-		style="background-image: url('img/terrazzo.jpg');">
-	</div>
-	<div class="uk-section uk-text-left" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300">
-		<div class="uk-container">
-			<h2>
+	<div style="background-image: url('img/terrazzo.jpg');" class="parallex"></div>
+	<div class="section">
+		<div class="container">
+			<h2 class="wow slideDown">
 				Asker
 			</h2>
-			<p>
+			<p class="wow fadeIn">
 				Bysykler, bildeling og utslippsfrie busser er bare noen av tiltakene som skal gjøre Asker og livet i B10
 				til et enda grønnere og bedre sted å bo i fremtiden.
 			</p>
-			<div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid
-				uk-scrollspy="cls: uk-animation-slide-bottom; target: .uk-card; delay: 400;">
-				<div>
-					<div class="uk-card uk-card-default">
-						<div class="uk-card-media-top">
-							<img src="img/asker/1.jpg" alt="">
-						</div>
-						<div class="uk-card-body">
-							<h3 class="uk-card-title">Grønn fremtid i Asker</h3>
-							<p> Miljøvennlig hverdag med frisk luft, rent vann og et rikt dyre- og planteliv</p>
-						</div>
+			<div class="wow slideUp">
+				<div class="card card-default">
+					<div class="card-media-top">
+						<img src="img/asker/1.jpg" alt="">
+					</div>
+					<div class="card-body">
+						<h3 class="card-title">Grønn fremtid i Asker</h3>
+						<p> Miljøvennlig hverdag med frisk luft, rent vann og et rikt dyre- og planteliv</p>
 					</div>
 				</div>
-				<div>
-					<div class="uk-card uk-card-default">
-						<div class="uk-card-media-top">
-							<img src="img/asker/2.jpg" alt="">
-						</div>
-						<div class="uk-card-body">
-							<h3 class="uk-card-title">Finn formen i Asker!</h3>
-							<p>Et eldorado for ute og innetrening. Unike turskatter og moderne treningsanlegg.</p>
-						</div>
+			</div>
+			<div class="wow slideUp">
+				<div class="card card-default">
+					<div class="card-media-top">
+						<img src="img/asker/2.jpg" alt="">
+					</div>
+					<div class="card-body">
+						<h3 class="card-title">Finn formen i Asker!</h3>
+						<p>Et eldorado for ute og innetrening. Unike turskatter og moderne treningsanlegg.</p>
 					</div>
 				</div>
-				<div>
-					<div class="uk-card uk-card-default">
-						<div class="uk-card-media-top">
-							<img src="img/asker/fit.jpg" alt="">
-						</div>
-						<div class="uk-card-body">
-							<h3 class="uk-card-title">Aktiviteter i Asker</h3>
-							<p> Det er ikke bare nærhet til fjorden, marka og hovedstaden som gjør Asker til et
-								attraktivt sted å bo.</p>
-						</div>
+			</div>
+			<div class="wow slideUp">
+				<div class="card card-default">
+					<div class="card-media-top">
+						<img src="img/asker/fit.jpg" alt="">
+					</div>
+					<div class="card-body">
+						<h3 class="card-title">Aktiviteter i Asker</h3>
+						<p> Det er ikke bare nærhet til fjorden, marka og hovedstaden som gjør Asker til et
+							attraktivt sted å bo.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="uk-height-medium uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top"
-		style="background-image: url('img/build-black.jpg');">
-		<div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
-			<h2 uk-parallax="opacity: 0,1; y: -50,0; scale: 2,1; viewport: 0.5;" style="padding: 15px;">Har du et ønske
+	<div style="background: url('img/build-black.jpg') 100% 100% no-repeat; background-size: cover; padding: 30px;">
+		<div class="text-center margin-auto margin-auto-vertical wow bounceIn">
+			<h2 style="padding: 15px; color: white;">Har du et ønske
 				om å se den
 				ferdige
 				leiligheten?</h2>
-			<button class="uk-button uk-button-danger uk-width-1-2 uk-margin-small-bottom"
-				uk-parallax="opacity: 0,1; y: 50,0; scale: 0.5,1; viewport: 0.5;">Gjør en avtale</button>
+			<button class="button button-danger" style="margin-bottom: 30px;">Gjør en avtale</button>
 		</div>
 	</div>
-
-	<div class="uk-section uk-text-left" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300">
-		<div class="uk-container">
+	<div class="section wow fadeIn">
+		<div class="container">
 			<h2>
 				Det kan lønne seg å eie
 			</h2>
@@ -203,12 +167,11 @@
 			</p>
 		</div>
 	</div>
-	<div class="uk-overflow-hidden uk-height-medium">
-		<img src="img/header-2.jpg" alt="Example image" class="uk-animation-reverse uk-transform-origin-top-right"
-			uk-scrollspy="cls: uk-animation-kenburns; repeat: true">
+	<div class="img-container">
+		<div class="image"></div>
 	</div>
-	<div class="uk-section uk-text-left" uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 300">
-		<div class="uk-container">
+	<div class="section wow fadeIn">
+		<div class="container">
 			<h2>
 				Vi skaper bedre hjem
 			</h2>
@@ -216,37 +179,33 @@
 				Ved å være den aller beste på det vi gjør og ha våre ansatte og kunder i fokus skal vi levere de beste
 				hjemmene til våre kunder.
 			</p>
-			<ul uk-accordion>
-				<li>
-					<a class="uk-accordion-title" href="#">VI SKAPER BEDRE HJEM</a>
-					<div class="uk-accordion-content">
+			<div class="accordion">
+				<section>
+					<input type="checkbox" class="accordion__checkbox" id="accordion-heading-1">
+					<label class="accordion__heading" for="accordion-heading-1">VI SKAPER BEDRE HJEM</label>
+					<div class="accordion__content">
 						<p>Ved å være den aller beste på det vi gjør og ha våre ansatte og kunder i fokus, skal vi
 							levere de beste hjemmene til våre kunder.</p>
 					</div>
-				</li>
-				<li>
-					<a class="uk-accordion-title" href="#">ANSVARLIG</a>
-					<div class="uk-accordion-content">
+				</section>
+				<section>
+					<input type="checkbox" class="accordion__checkbox" id="accordion-heading-2">
+					<label class="accordion__heading" for="accordion-heading-2">ANSVARLIG</label>
+					<div class="accordion__content">
 						<p>Vi er sannferdige, forutsigbare og rause, og tar ansvar for hverandre, kundene og samfunnet
 							vi lever i.</p>
 					</div>
-				</li>
-				<li>
-					<a class="uk-accordion-title" href="#">NYTENKENDE</a>
-					<div class="uk-accordion-content">
+				</section>
+				<section>
+					<input type="checkbox" class="accordion__checkbox" id="accordion-heading-3">
+					<label class="accordion__heading" for="accordion-heading-3">NYTENKENDE</label>
+					<div class="accordion__content">
 						<p>Vi utfordrer etablerte sannheter og er ikke redd for å gjøre feil. Skaperkraft og innovasjon
 							ligger i vår natur.</p>
 					</div>
-				</li>
-				<li>
-					<a class="uk-accordion-title" href="#">UTHOLDENDE</a>
-					<div class="uk-accordion-content">
-						<p>Vi slår oss aldri til ro og tror på kontinuerlig forbedring. Våre erfaringer gjør oss stadig
-							bedre.</p>
-					</div>
-				</li>
-			</ul>
-			<hr class="uk-divider-icon">
+				</section>
+			</div>
+			<hr class="divider-icon">
 			<p>
 				Fredensborg Bolig har i dag ca 5 000 boliger under utvikling, salg og oppføring.
 			</p>
@@ -258,34 +217,34 @@
 			</p>
 		</div>
 	</div>
-	<article class="uk-comment uk-comment-primary uk-text-center"
-		uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
+	<article class="comment comment-primary text-center wow fadeIn">
 		<h2>Kontakter for meglere</h2>
-
-		<div class="round" style="background-image: url('img/Keven_Frantzen.jpg');">
-		</div>
-
-		<div class="uk-width-expand">
+		<div class="round" style="background-image: url('img/Keven_Frantzen.jpg');"></div>
+		<div class="width-expand">
 			<h4>Keven Frantzen</h4>
-			<p class="uk-comment-meta uk-subnav-divider uk-margin-remove-top">EIENDOMSMEGLER MNEF</p>
+			<p class="comment-meta subnav-divider margin-remove-top">EIENDOMSMEGLER MNEF</p>
 		</div>
-		<div class="uk-comment-body uk-text-center">
-			<a href="tel: 468 00 600" uk-icon="icon: phone; ratio: 2"></a>
-			<a href="mailto:kf@privatmegleren.no" uk-icon="icon: mail; ratio: 2"></a>
+		<div class="comment-body text-center">
+			<a href="tel: 468 00 600" class="icons"><i class="fa fa-phone"></i></a>
+			468 00 600
+			<a href="mailto:kf@privatmegleren.no" class="icons"><i class="fa fa-envelope"></i></a>
 		</div>
 	</article>
 	<iframe
 		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1627.3051641449142!2d10.733553415589416!3d59.92164387043209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e797ebeea15%3A0x185419921fd3329a!2zU3RlbnNiZXJnZ2F0YSAyNywgMDE3MCBPc2xvLCDQndC-0YDQstC10LPQuNGP!5e1!3m2!1sru!2sua!4v1573376824067!5m2!1sru!2sua"
 		width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-	<footer class="main-footer uk-text-center">
+	<footer class="main-footer text-center">
 		<p>Stensberggata 27, 0170 Oslo<br />
 			post@fredensborgbolig.no<br />
 			+47 23 29 20 00</p>
-		<a href="#" class="uk-margin-small-right" uk-icon="linkedin"></a>
-		<a href="#" class="uk-margin-small-right" uk-icon="facebook"></a>
-		<a href="#" class="" uk-icon="instagram"></a>
+		<a href="#" class="icons"><i class="fa fa-linkedin"></i></a>
+		<a href="#" class="icons"><i class="fa fa-facebook"></i></a>
+		<a href="#" class="icons"><i class="fa fa-instagram"></i></a>
 	</footer>
-	<script src="js/libs.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 
 </html>
