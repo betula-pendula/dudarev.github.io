@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Roboto:300,400,500,700,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h3>Dashboard</h3>
+    <div class="profile">
+      <img src="img/Mask Group.png" alt="" class="round">
+      <img src="img/Ellipse 40.png" alt="" class="ellipse">
+      <div class="profile-info">
+        <p>
+          <span class="hello-name">Hello, Demo Kunde!</span>
+        </p>
+        <p>
+          mailcompany@gmail.com
+        </p>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown</button>
+        <div class="dropdown-content">
+          <div class="profile-menu">
+            <a href="#">
+              Settings
+              <img src="img/icon/settings-gray.svg" alt="">
+            </a>
+            <a href="#">
+              Logout
+              <img src="img/icon/log out.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="sidebar">
+    <div class="logo">
+      <img src="img/logo.png" alt="">
+    </div>
+    <div class="menu">
+      <div class="sidenav">
+        <a href="#" class="active-menu">
+          <img src="img/icon/grid.svg" alt="">
+          Dashboard
+        </a>
+        <button class="dropdown-btn">
+          <img src="img/icon/smartphone.svg" alt="">
+          Landing page
+          <img class="fa-caret-down" src="img/icon/down.svg" alt="">
+        </button>
+        <div class="dropdown-container">
+          <a href="#"><img src="img/icon/tablet.svg" alt="">Mobile landing pages</a>
+          <a href="#"><img src="img/icon/edit form.svg" alt="">Global Forms</a>
+          <a href="#"><img src="img/icon/file text.svg" alt="">Local Forms</a>
+          <a href="#"><img src="img/icon/database.svg" alt="">DB Storage</a>
+        </div>
+        <button class="dropdown-btn">
+          <img src="img/icon/send.svg" alt="">
+          Campaigns
+          <img class="fa-caret-down" src="img/icon/down.svg" alt="">
+        </button>
+        <div class="dropdown-container">
+          <a href="#"><img src="img/icon/send.svg" alt="">Campaigns</a>
+          <a href="#"><img src="img/icon/trending up.svg" alt="">Reports</a>
+          <a href="#"><img src="img/icon/square.svg" alt="">SMS Codewords</a>
+          <a href="#"><img src="img/icon/circle.svg" alt="">SMS Blacklist</a>
+          <a href="#"><img src="img/icon/mail.svg" alt="">Email Blacklist</a>
+          <a href="#"><img src="img/icon/calendar.svg" alt="">Activity view</a>
+          <a href="#"><img src="img/icon/trending up.svg" alt="">Email Opening Rate</a>
+          <a href="#"><img src="img/icon/trending up.svg" alt="">Soft Bounces</a>
+        </div>
+        <a href="#">
+          <img src="img/icon/clock.svg" alt="">
+          Jobs
+        </a>
+        <button class="dropdown-btn">
+          <img src="img/icon/users.svg" alt="">
+          GDPR
+          <img class="fa-caret-down" src="img/icon/down.svg" alt="">
+        </button>
+        <div class="dropdown-container">
+          <a href="#"><img src="img/icon/user minus.svg" alt="">Delete Customer</a>
+          <a href="#"><img src="img/icon/user check.svg" alt="">Personal Report</a>
+          <a href="#"><img src="img/icon/users.svg" alt="">Member Report</a>
+          <a href="#"><img src="img/icon/share 2.svg" alt="">Export GDRP</a>
+          <a href="#"><img src="img/icon/settings.svg" alt="">Tepms & Conditions</a>
+        </div>
+        <button class="dropdown-btn">
+          <img src="img/icon/pie chart.svg" alt="">
+          Statistics
+          <img class="fa-caret-down" src="img/icon/down.svg" alt="">
+        </button>
+        <div class="dropdown-container">
+          <a href="#"><img src="img/icon/list.svg" alt="">NPS</a>
+          <a href="#"><img src="img/icon/bar chart.svg" alt="">Overview</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="left-sidebar">
+    <div class="main-icon">
+      <div id="mySidenav" class="sidenav-left">
+        <div id="sidebarButtonOpen" class="main-icon-close">
+          <a href="javascript:void(0)" onclick="openNav()"><img src="img/icon/filter.svg" alt=""></a>
+        </div>
+        <div id="sidebarButtonClose" class="main-icon-close">
+          <a href="javascript:void(0)" onclick="closeNav()"><img src="img/icon/right.svg" alt=""></a>
+        </div>
+        <div class="sidenav-left-body">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <p>Hello World!</p>
+  </div>
+
+  <script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "415px";
+      document.getElementById("sidebarButtonOpen").style.visibility = "hidden";
+      document.getElementById("sidebarButtonClose").style.visibility = "visible";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "85px";
+      document.getElementById("sidebarButtonOpen").style.visibility = "visible";
+      document.getElementById("sidebarButtonClose").style.visibility = "hidden";
+    }
+
+  </script>
+</body>
+
+</html>
