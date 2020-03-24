@@ -1,0 +1,29 @@
+.media {
+  border-bottom: 1px solid #e4e7ea;
+  padding-bottom: 1em;
+  position: relative;
+}
+
+span.date-coment {
+  position: absolute;
+  right: 0px;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #3d4856;
+  top: -1px;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+i.arrow-left {
+  color: #35c180;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #35c180;
+}
