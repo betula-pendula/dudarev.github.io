@@ -1976,7 +1976,7 @@ a.reset {
 }
 
 span.sort-by {
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -2061,4 +2061,9 @@ span.sort-by {
 
 .bg-top-5 {
   background-color: #0a939e !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #35c180;
 }
