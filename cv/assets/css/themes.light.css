@@ -4,7 +4,7 @@
 /* Body */
 body {
     background: #fff;
-    color: #939393;
+    color: #595959;
   }
 
   /* Heading */
@@ -14,7 +14,7 @@ body {
   h4,
   h5,
   h6 {
-    color: #727272;
+    color: #404040;
   }
 
   /* Link Container */
@@ -37,7 +37,7 @@ body {
   a,
   .t-link-container .t-link-container__item,
   .t-link-container:hover .t-link-container__item--blended {
-    color: #4793E4;
+    color: #166AD9;
   }
 
   /* Hover Links */
@@ -45,7 +45,7 @@ body {
   a:focus,
   a:active,
   .t-link-container:hover .t-link-container__item {
-    color: #e0a707;
+    color: #200BE6;
   }
 
   /* Horizontal Rulers */
@@ -62,31 +62,31 @@ body {
   /* Primary Color */
   .t-primary-color,
   .t-primary-color-line {
-    color: #4793E4;
+    color: #166AD9;
   }
 
   .t-primary-bg,
   .t-primary-color-line {
-    background: #4793E4;
+    background: #166AD9;
   }
 
   /* Preloader */
   .t-preloader__spinner:not(:required):before {
-    border-top-color: #4793E4;
-    border-bottom-color: #4793E4;
+    border-top-color: #166AD9;
+    border-bottom-color: #166AD9;
   }
 
   /* Brand Colors */
   .t-title__first-word {
-    color: #939393;
+    color: #595959;
   }
 
   .t-title__second-word {
-    color: #4793E4;
+    color: #166AD9;
   }
 
   .t-sub-title {
-    color: #939393;
+    color: #595959;
   }
 
   /* Brand Typography */
@@ -141,7 +141,7 @@ body {
   .t-social-button:hover .far,
   .t-social-button:hover .fal,
   .t-social-button:hover .fab {
-    color: #4793E4;
+    color: #166AD9;
   }
 
   /* Image Overlay */
