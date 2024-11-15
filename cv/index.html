@@ -29,6 +29,25 @@
     />
     <meta property="og:url" content="https://anton.dudarev.com/cv/" />
 
+    <style>
+      .c-avatar__img {
+        border-radius: 50%;
+        width: 11rem;
+      }
+      @media (min-width: 760px) {
+        .c-avatar__img {
+          width: 14rem;
+        }
+      }
+      @media (min-width: 1200px) {
+        .c-avatar__img {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <link rel="preload" as="image" href="assets/images/header/avatar.webp" />
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@400;700&display=swap"
@@ -69,7 +88,12 @@
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/themes.light.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/style.css"
+      media="print"
+      onload="this.onload=null;this.media='all';"
+    />
   </head>
 
   <body>
