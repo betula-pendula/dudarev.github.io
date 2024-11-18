@@ -25,7 +25,7 @@
     />
     <meta
       property="og:image"
-      content="https://anton.dudarev.com/cv/assets/images/header/avatar.webp"
+      content="https://anton.dudarev.com/cv/../assets/images/header/avatar.webp"
     />
     <meta property="og:url" content="https://anton.dudarev.com/cv/" />
 
@@ -46,7 +46,7 @@
       }
     </style>
 
-    <link rel="preload" as="image" href="assets/images/header/avatar.webp" />
+    <link rel="preload" as="image" href="../assets/images/header/avatar.webp" />
 
     <!-- Google Fonts -->
     <link
@@ -65,32 +65,32 @@
     <!-- FontAwesome -->
     <link
       rel="stylesheet"
-      href="assets/plugins/font-awesome/css/fontawesome.min.css"
+      href="../assets/plugins/font-awesome/css/fontawesome.min.css"
       media="print"
       onload="this.media='all'"
     />
     <link
       rel="stylesheet"
-      href="assets/plugins/font-awesome/css/brands.min.css"
+      href="../assets/plugins/font-awesome/css/brands.min.css"
       media="print"
       onload="this.media='all'"
     />
     <noscript>
       <link
         rel="stylesheet"
-        href="assets/plugins/font-awesome/css/fontawesome.min.css"
+        href="../assets/plugins/font-awesome/css/fontawesome.min.css"
       />
       <link
         rel="stylesheet"
-        href="assets/plugins/font-awesome/css/brands.min.css"
+        href="../assets/plugins/font-awesome/css/brands.min.css"
       />
     </noscript>
 
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/themes.light.css" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/themes.light.css" />
     <link
       rel="stylesheet"
-      href="assets/css/style.css"
+      href="../assets/css/style.css"
       media="print"
       onload="this.onload=null;this.media='all';"
     />
@@ -99,6 +99,14 @@
   <body>
     <div class="c-preloader js-preloader">
       <div class="c-preloader__spinner t-preloader__spinner"></div>
+    </div>
+    <div id="cookie-banner" class="cookie-banner">
+      <p>
+        This website uses cookies to improve your experience. By using this
+        site, you agree to our
+        <a href="/privacy-policy" target="_blank">Privacy Policy</a>.
+      </p>
+      <button id="cookie-accept-btn" class="cookie-button">Accept</button>
     </div>
     <div class="c-main-container js-main-container">
       <section class="o-section o-section--header t-section t-section--header">
@@ -115,7 +123,7 @@
                     <div class="a-header c-avatar">
                       <img
                         class="c-avatar__img"
-                        src="assets/images/header/avatar.webp"
+                        src="../assets/images/header/avatar.webp"
                         alt="Anton Dudarev"
                       />
                     </div>
@@ -1177,9 +1185,9 @@
         </div>
       </section>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/scrollreveal.min.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -1202,6 +1210,29 @@
           "name": "Donetsk National Technical University"
         }
       }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cookieBanner = document.getElementById("cookie-banner");
+        const acceptButton = document.getElementById("cookie-accept-btn");
+
+        // Проверяем значение в localStorage
+        const cookiesAccepted = localStorage.getItem("cookiesAccepted");
+
+        if (cookiesAccepted === "true") {
+          // Если пользователь уже согласился, скрываем баннер
+          cookieBanner.style.display = "none";
+        } else {
+          // Иначе отображаем баннер
+          cookieBanner.style.display = "block";
+        }
+
+        // Обработчик кнопки "Accept"
+        acceptButton.addEventListener("click", () => {
+          localStorage.setItem("cookiesAccepted", "true"); // Сохраняем согласие
+          cookieBanner.style.display = "none"; // Скрываем баннер
+        });
+      });
     </script>
   </body>
 </html>
