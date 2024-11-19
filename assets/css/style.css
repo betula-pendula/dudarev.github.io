@@ -62,3 +62,7 @@ h2 {
 .cookie-banner .cookie-button:hover {
     background-color: #007acc;
 }
+
+[data-scroll] {
+    min-height: 100px;
+}
