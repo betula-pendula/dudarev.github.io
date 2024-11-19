@@ -208,3 +208,8 @@
          box-shadow: 0 0 0 6px #fcfcfc;
      }
  }
+
+ .c-work__timeframe,
+ .c-work__location {
+     color: #111111;
+ }
