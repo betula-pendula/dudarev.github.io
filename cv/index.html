@@ -2,7 +2,7 @@
 
 <html lang="en">
   <head>
-    <title>Anton Dudarev - UX/UI Designer & Front-End Developer</title>
+    <title>Anton Dudarev - UX/UI Designer & Front-End Developer - CV</title>
     <meta
       name="description"
       content="Explore the portfolio of Anton Dudarev, an experienced UX/UI designer and front-end developer specializing in user-centric design and innovative front-end solutions."
@@ -30,19 +30,32 @@
     <meta property="og:url" content="https://anton.dudarev.com/cv/" />
 
     <style>
+      p {
+        font-size: 1rem;
+      }
+
       .c-avatar__img {
         border-radius: 50%;
         width: 11rem;
+        height: 11rem;
       }
+
       @media (min-width: 760px) {
         .c-avatar__img {
           width: 14rem;
+          height: 14rem;
         }
       }
+
       @media (min-width: 1200px) {
         .c-avatar__img {
           width: 100%;
+          height: 100%;
         }
+      }
+      /* Скрываем баннер по умолчанию */
+      #cookie-banner {
+        display: none;
       }
     </style>
 
@@ -125,6 +138,8 @@
                         class="c-avatar__img"
                         src="../assets/images/header/avatar.webp"
                         alt="Anton Dudarev"
+                        width="196"
+                        height="196"
                         loading="lazy"
                       />
                     </div>
@@ -1228,8 +1243,10 @@
           // Если пользователь уже согласился, скрываем баннер
           cookieBanner.style.display = "none";
         } else {
-          // Иначе отображаем баннер
-          cookieBanner.style.display = "block";
+          // Устанавливаем задержку перед отображением баннера
+          setTimeout(() => {
+            cookieBanner.style.display = "block"; // Показываем баннер через 2 секунды
+          }, 2000);
         }
 
         // Обработчик кнопки "Accept"
