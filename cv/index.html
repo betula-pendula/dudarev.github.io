@@ -110,9 +110,6 @@
   </head>
 
   <body>
-    <div class="c-preloader js-preloader">
-      <div class="c-preloader__spinner t-preloader__spinner"></div>
-    </div>
     <div id="cookie-banner" class="cookie-banner">
       <p>
         This website uses cookies to improve your experience. By using this
@@ -1204,9 +1201,6 @@
         </div>
       </section>
     </div>
-    <script src="../assets/js/jquery.min.js" defer></script>
-    <script src="../assets/js/scrollreveal.min.js" defer></script>
-    <script src="../assets/js/main.js" defer></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -1234,24 +1228,18 @@
       document.addEventListener("DOMContentLoaded", () => {
         const cookieBanner = document.getElementById("cookie-banner");
         const acceptButton = document.getElementById("cookie-accept-btn");
-
-        // Проверяем значение в localStorage
         const cookiesAccepted = localStorage.getItem("cookiesAccepted");
 
         if (cookiesAccepted === "true") {
-          // Если пользователь уже согласился, скрываем баннер
           cookieBanner.style.display = "none";
         } else {
-          // Устанавливаем задержку перед отображением баннера
           setTimeout(() => {
-            cookieBanner.style.display = "block"; // Показываем баннер через 2 секунды
+            cookieBanner.style.display = "block";
           }, 2000);
         }
-
-        // Обработчик кнопки "Accept"
         acceptButton.addEventListener("click", () => {
-          localStorage.setItem("cookiesAccepted", "true"); // Сохраняем согласие
-          cookieBanner.style.display = "none"; // Скрываем баннер
+          localStorage.setItem("cookiesAccepted", "true");
+          cookieBanner.style.display = "none";
         });
       });
     </script>
