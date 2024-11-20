@@ -1,0 +1,23 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://anton.dudarev.com/</loc>
+        <lastmod>2023-11-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://anton.dudarev.com/cv/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://anton.dudarev.com/cv/" />
+        <xhtml:link rel="alternate" hreflang="de" href="https://anton.dudarev.com/lebenslauf/" />
+        <lastmod>2023-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://anton.dudarev.com/lebenslauf/</loc>
+        <lastmod>2023-11-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
