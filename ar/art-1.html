@@ -6,32 +6,35 @@
   </head>
   <body style="margin: 0; overflow: hidden">
     <a-scene embedded arjs>
-      <!-- Камера -->
+      <!-- Маркер -->
       <a-marker type="pattern" url="markers/pattern-marker.patt">
+        <!-- Картина (размер больше маркера, висит над ним) -->
         <a-plane
           src="artworks/painting1.jpg"
-          position="0 0 0"
+          position="0 0.5 0"
           rotation="-90 0 0"
-          width="1"
-          height="1"
-        ></a-plane>
-        <a-entity position="0 -0.6 0">
-          <a-plane
-            color="blue"
-            width="0.5"
-            height="0.2"
-            position="0 0 0"
-            onclick="window.open('https://anton.dudarev.com/', '_blank')"
-          >
-            <a-text
-              value="Подробнее"
-              align="center"
-              position="0 0 0.1"
-              color="white"
-            ></a-text>
-          </a-plane>
-        </a-entity>
+          width="1.5"
+          height="1.0"
+        >
+        </a-plane>
+
+        <!-- AR-кнопка -->
+        <a-plane
+          color="blue"
+          width="0.6"
+          height="0.2"
+          position="0 -0.2 0.1"
+          onclick="window.open('https://yoursite.com/painting1', '_blank')"
+        >
+          <a-text
+            value="Подробнее"
+            align="center"
+            position="0 0 0.1"
+            color="white"
+          ></a-text>
+        </a-plane>
       </a-marker>
+
       <a-entity camera></a-entity>
     </a-scene>
   </body>
