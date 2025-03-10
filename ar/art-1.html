@@ -3,37 +3,54 @@
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
+    <script>
+      AFRAME.registerComponent("markerhandler", {
+        init: function () {
+          const button = document.querySelector("#ar-button");
+
+          button.addEventListener("click", function () {
+            window.open("https://yoursite.com/painting1", "_blank");
+          });
+        },
+      });
+    </script>
   </head>
   <body style="margin: 0; overflow: hidden">
     <a-scene embedded arjs>
       <!-- Маркер -->
-      <a-marker type="pattern" url="markers/pattern-marker.patt">
+      <a-marker
+        id="animated-marker"
+        type="pattern"
+        url="markers/pattern-marker1.patt"
+      >
         <!-- Картина (размер больше маркера, висит над ним) -->
         <a-plane
+          id="animated-model"
           src="artworks/painting1.jpg"
           position="0 0 0"
           rotation="-90 0 0"
-          width="3.0"
-          height="2.0"
+          width="3"
+          height="2"
         >
         </a-plane>
 
-        <!-- AR-кнопка (Теперь её видно) -->
+        <!-- AR-кнопка (Теперь точно работает!) -->
         <a-plane
+          id="ar-button"
           color="blue"
           width="0.6"
           height="0.2"
-          position="0 0.1 0.1"
+          position="0 0.3 0.2"
           rotation="-90 0 0"
-          material="opacity: 0.8; transparent: true"
-          onclick="window.open('https://google.com/', '_blank')"
+          material="opacity: 0.8; transparent: true; shader: standard"
+          markerhandler
         >
           <a-text
             value="▶ Открыть сайт"
             align="center"
             position="0 0 0.1"
             color="white"
-            scale="1 1 1"
+            scale="1.5 1.5 1.5"
           >
           </a-text>
         </a-plane>
