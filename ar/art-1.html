@@ -13,25 +13,31 @@
           src="artworks/painting1.jpg"
           position="0 0.5 0"
           rotation="-90 0 0"
-          width="1.5"
-          height="1.0"
+          width="15.0"
+          height="10.0"
         >
         </a-plane>
 
-        <!-- AR-кнопка -->
+        <!-- AR-кнопка (Теперь её видно) -->
         <a-plane
           color="blue"
           width="0.6"
           height="0.2"
-          position="0 -0.2 0.1"
-          onclick="window.open('https://yoursite.com/painting1', '_blank')"
+          position="0 0.3 0.2"
+          rotation="-90 0 0"
+          material="opacity: 0.8; transparent: true; shader:
+          standard"
+          onclick="window.open('https://yoursite.com/painting1',
+          '_blank')"
         >
           <a-text
-            value="Подробнее"
+            value="▶ Открыть сайт"
             align="center"
             position="0 0 0.1"
             color="white"
-          ></a-text>
+            scale="1.5 1.5 1.5"
+          >
+          </a-text>
         </a-plane>
       </a-marker>
 
