@@ -33,49 +33,49 @@ document.addEventListener("DOMContentLoaded", () => {
   const categoryData = {
     karrierewege: {
       title: "Karrierewege",
-      text: "Der Weg zur Professur ist nicht nur steinig, sondern auch vielfältig: ...",
+      text: "Der Weg zur Professur ist nicht nur steinig, sondern auch vielfältig: befristete oder unbefristete Stellen, Stellen an Universitäten oder außeruniversitären Forschungseinrichtungen, Stellen im In- oder Ausland, Stipendien, Nachwuchsgruppen – welcher Weg lässt sich am besten mit Familie und Partnerschaft vereinbaren? Was sind die Voraussetzungen dafür, dass sich wissenschaftliche Karriere auf der einen Seite und Familie und Partnerschaft auf der anderen Seite unter einen Hut bringen lassen?",
     },
     promotion: {
       title: "Promotion",
-      text: "Erfahren Sie, wie Sie Ihre Promotion erfolgreich planen ...",
+      text: "Erfahren Sie, wie Sie Ihre Promotion erfolgreich planen und durchführen – von der Themenwahl bis zur Disputation.",
       image: "images/personal-growth.png",
     },
     habilitation: {
       title: "Habilitation",
-      text: "Was bedeutet Habilitation? Wir erklären den Ablauf ...",
+      text: "Was bedeutet Habilitation? Wir erklären den Ablauf, die Anforderungen und ihre Bedeutung für die akademische Karriere.",
       image: "images/saving-book.png",
     },
     juniorprofessur: {
       title: "Juniorprofessur",
-      text: "Der Einstieg in die Professur: Alles über Voraussetzungen ...",
+      text: "Der Einstieg in die Professur: Alles über Voraussetzungen, Chancen und Herausforderungen einer Juniorprofessur.",
       image: "images/teacher.png",
     },
     berufungsverfahren: {
       title: "Berufungsverfahren",
-      text: "Schritt für Schritt durch das Berufungsverfahren ...",
+      text: "Schritt für Schritt durch das Berufungsverfahren – von der Ausschreibung bis zur Ernennung.",
       image: "images/permanent-job.png",
     },
     arbeitsplatz: {
       title: "Arbeitsplatz",
-      text: "Erfahren Sie mehr über die Arbeitsbedingungen ...",
+      text: "Erfahren Sie mehr über die Arbeitsbedingungen in Forschung und Lehre – Infrastruktur, Ausstattung und Arbeitsklima.",
       image: "images/job.png",
     },
     familie: {
       title: "Familie und Karriere",
-      text: "Karriere und Familie in Einklang bringen ...",
+      text: "Karriere und Familie in Einklang bringen: Unterstützungsangebote, Rechte und Möglichkeiten.",
       image: "images/defend-family.png",
     },
     mobilitaet: {
       title: "Mobilität",
-      text: "Berufliche Mobilität als Chance: Standortwechsel ...",
+      text: "Berufliche Mobilität als Chance: Standortwechsel, Forschungsaufenthalte und internationale Netzwerke.",
     },
     blickausland: {
       title: "Blick ins Ausland",
-      text: "Internationale Perspektiven: Arbeiten und Forschen im Ausland ...",
+      text: "Internationale Perspektiven: Arbeiten und Forschen im Ausland – Programme, Erfahrungen und Tipps.",
     },
     allgemein: {
       title: "Allgemeine Informationen",
-      text: "Grundlegende Informationen zu Themen rund um wissenschaftliche Karrieren ...",
+      text: "Grundlegende Informationen zu Themen rund um wissenschaftliche Karrieren und Hochschullaufbahnen.",
     },
   };
 
